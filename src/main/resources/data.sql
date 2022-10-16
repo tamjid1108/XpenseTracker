@@ -1,9 +1,9 @@
 
-insert into users   values (1, 'Siamak', 'Porter', 'siamak', 'codeengine11@gmail.com');
-insert into users  values (2, 'John', 'Doe', 'johnynow', 'John@john.com');
-insert into users  values (3, 'Adam', 'Levine', 'ilovetocheat', 'adam@adam.com');
+insert into users (user_id, first_name, last_name, username, password, roles, email)  values (1, 'Siamak', 'Porter', 'siamak', 'password123', 'normal_user', 'codeengine11@gmail.com');
+insert into users (user_id, first_name, last_name, username, password, roles, email) values (2, 'John', 'Doe', 'johnynow', 'password456', 'normal_user', 'John@john.com');
+insert into users (user_id, first_name, last_name, username, password, roles, email) values (3, 'Adam', 'Levine', 'ilovetocheat', 'password789', 'normal_user', 'adam@adam.com');
 
--- (firstName, lastName, username, email)
+-- (user_id, firstName, lastName, username, password, email)
 insert into category values (1, 'Business Travel');
 insert into category  values (2, 'Auto Loan');
 insert into category  values (3, 'Personal Travel');
