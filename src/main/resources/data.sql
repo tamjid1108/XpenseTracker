@@ -1,7 +1,7 @@
 
-insert into users (user_id, first_name, last_name, username, password, roles, email)  values (1, 'Siamak', 'Porter', 'siamak', 'password123', 'normal_user', 'codeengine11@gmail.com');
-insert into users (user_id, first_name, last_name, username, password, roles, email) values (2, 'John', 'Doe', 'johnynow', 'password456', 'normal_user', 'John@john.com');
-insert into users (user_id, first_name, last_name, username, password, roles, email) values (3, 'Adam', 'Levine', 'ilovetocheat', 'password789', 'normal_user', 'adam@adam.com');
+insert into users (name, username, password, roles, email)  values ('Siamak', 'siamak', 'password123', 'ROLE_USER', 'codeengine11@gmail.com');
+insert into users (name, username, password, roles, email) values ('John',  'johnynow', 'password456', 'ROLE_USER', 'John@john.com');
+insert into users (name, username, password, roles, email) values ('Adam', 'ilovetocheat', 'password789', 'ROLE_USER', 'adam@adam.com');
 
 -- (user_id, firstName, lastName, username, password, email)
 insert into category values (1, 'Business Travel');
