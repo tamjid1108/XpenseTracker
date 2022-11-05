@@ -31,12 +31,6 @@ public class AuthController {
 	}
 	
 	
-	@GetMapping("/")
-	public String home(Map<String, Object> model, @AuthenticationPrincipal SecurityUser user) {
-		model.put("message", "Hello " + user.getUsername());
-		return "home";
-	}
-	
 	@GetMapping("/signup")
 	public String signUp() {
 		return "signup";

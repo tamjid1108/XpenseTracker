@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/auth.css">
 
     <title>Xpense Tracker</title>
 </head>
@@ -31,7 +31,7 @@
                     <input type="text" id="name" name="name" class="register-input icon" placeholder="&#xf007    Your Name" required>
                     <input type="text" id="username" name="username" class="register-input icon" placeholder="&#xf007    Username" required>
                     <input type="email" id="email" name="email" class="register-input icon" placeholder="&#xf0e0    Your Email" required>
-                    <input type="password" id="password" name="password" class="register-input icon" placeholder="&#xf023    Password"  required onkeyup="validate()" >
+                    <input type="password" id="password" name="password" class="register-input icon" placeholder="&#xf023    Password"  required onkeyup="validate()" autocomplete="new-password">
                     <input type="password" id="repeatpw" name="repeatpw" class="register-input icon" placeholder="&#xf13e    Repeat your password" required onkeyup="validate()">
                     <p id="message" class="pt-3 text-danger"></p>
                     <p id="message" class="pt-3 text-danger message">${message}</p>
