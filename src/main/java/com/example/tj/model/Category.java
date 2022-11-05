@@ -23,6 +23,17 @@ public class Category {
 	
 	@NonNull
 	private String categoryName;
+	
+	
+	public Category() {
+		super();
+	}
+
+	public Category(Long categoryId, @NonNull String categoryName) {
+		super();
+		this.categoryId = categoryId;
+		this.categoryName = categoryName;
+	}
 
 	public Long getCategoryId() {
 		return categoryId;

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/auth.css">
 
     <title>Xpense Tracker</title>
 </head>
@@ -33,7 +33,7 @@
             <div class="col ms-1">
                 <h2 class="heading">Login</h2>
                 <form action="/login" method="post">
-                    <input type="text" id="username" name="username" class="register-input icon" placeholder="&#xf007    Your Name" required>
+                    <input type="text" id="username" name="username" class="register-input icon" placeholder="&#xf007    Username" required>
                     <input type="password" id="password" name="password" class="register-input icon" placeholder="&#xf023    Password" required>
                     <p id="message" class="pt-3 text-danger message">${errorMessage}</p>
                     <input type="submit" value="Log In" class="mt-5 btn btn-primary btncolor">

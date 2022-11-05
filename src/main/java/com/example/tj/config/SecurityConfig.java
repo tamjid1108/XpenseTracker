@@ -34,7 +34,7 @@ public class SecurityConfig {
 				.csrf().disable()
                 .authorizeRequests(auth -> auth
                         .antMatchers("/h2-console/**").permitAll()
-                        .antMatchers("/signup", "/styles/**", "/images/**").permitAll()
+                        .antMatchers("/signup", "/styles/**", "/images/**", "/category/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .userDetailsService(jpaUserDetailsService)
