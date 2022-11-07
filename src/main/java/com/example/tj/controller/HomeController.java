@@ -50,7 +50,7 @@ public class HomeController {
 		}
 		model.addAttribute("catOptions", catOptions);
 		
-		Collection<Expense> result = this.expenseRepository.findAllByUser(user.getUser());
+		Collection<Expense> result = this.expenseRepository.findAllByUserOrderByExpenseDate(user.getUser());
 		
 		HashMap<String,Double> expensesByCategory = new HashMap<String, Double>();
 		
@@ -73,6 +73,7 @@ public class HomeController {
 				expensesByDate.put(expDate, expensesByDate.getOrDefault(expDate, 0D) + amount);
 			}
 		}
+		
 		
 		model.addAttribute("expensesByDate", expensesByDate);
 		
