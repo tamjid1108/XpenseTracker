@@ -74,6 +74,7 @@ public class HomeController {
 			}
 		}
 		
+		
 		model.addAttribute("expensesByDate", expensesByDate);
 		
 		return "index";
