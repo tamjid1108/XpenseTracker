@@ -15,5 +15,6 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long>{
 	Collection<Expense> findAllByExpenseDateBetween(LocalDate start, LocalDate end);
 //	Collection<> countTotalExpenseAmountByCategory();
 	Collection<Expense> findAllByUserOrderByExpenseDateDesc(User user);
+	Collection<Expense> findAllByUserOrderByExpenseDate(User user);
 	
 }
